@@ -6,8 +6,15 @@ import string
 import time
 import os
 import sys
-os.system("Warp Plus Adder By Adarsh Goel")
+print("Warp Plus Adder By Adarsh Goel")
 os.system('cls' if os.name == 'nt' else 'clear')
+print("""   
+    _       _                _        ____            _ 
+   / \   __| | __ _ _ __ ___| |__    / ___| ___   ___| |
+  / _ \ / _` |/ _` | '__/ __| '_ \  | |  _ / _ \ / _ \ |
+ / ___ \ (_| | (_| | |  \__ \ | | | | |_| | (_) |  __/ |
+/_/   \_\__,_|\__,_|_|  |___/_| |_|  \____|\___/ \___|_|
+                                                        """)
 print ("[-] With this script, you can getting unlimited GB on Warp+.")
 referrer = "fc3c3f51-9117-4127-820e-96304da18e9e"
 def genString(stringLength):
