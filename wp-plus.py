@@ -6,7 +6,7 @@ import string
 import time
 import os
 import sys
-print("Warp Plus Adder By Adarsh Goel")
+print("Warp Plus Unlimited GB Adder By Adarsh Goel")
 os.system('cls' if os.name == 'nt' else 'clear')
 print("""   
     _       _                _        ____            _ 
