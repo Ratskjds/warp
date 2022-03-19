@@ -7,7 +7,7 @@ import time
 import os
 import sys
 print("Warp Plus Unlimited GB Adder By Adarsh Goel")
-#os.system('cls' if os.name == 'nt' else 'clear')
+os.system('cls' if os.name == 'nt' else 'clear')
 print("""   
     _       _                _        ____            _ 
    / \   __| | __ _ _ __ ___| |__    / ___| ___   ___| |
@@ -61,17 +61,17 @@ while True:
 	result = run()
 	if result == 200:
 		g = g + 1
-		#os.system('cls' if os.name == 'nt' else 'clear')
+		os.system('cls' if os.name == 'nt' else 'clear')
 		print("")
-		#sys.stdout.flush()
+		sys.stdout.flush()
 		print(f"\n[-] WORK ON ID: {referrer}")    
 		print(f"[:)] {g} GB has been successfully added to your account.")
-		print(f"[#] Total: {g} Good {b} Bad")
+		print(f"[] Total: {g} Good {b} Bad")
 		print("[*] After 15 seconds, a new request will be sent.")
 		time.sleep(15)
 	else:
 		b = b + 1
-		#os.system('cls' if os.name == 'nt' else 'clear')
+		os.system('cls' if os.name == 'nt' else 'clear')
 		print("")
 		print("[:(] Error when connecting to server.")
 		print(f"[#] Total: {g} Good {b} Bad")	
