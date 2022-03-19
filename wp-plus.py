@@ -71,8 +71,8 @@ while True:
 		print(f"\n[-] WORK ON ID: {referrer}")    
 		print(f"[:)] {g} GB has been successfully added to your account.")
 		print(f"[#] Total: {g} Good {b} Bad")
-		print("[*] After 5 seconds, a new request will be sent.")
-		time.sleep(5)
+		print("[*] After 15 seconds, a new request will be sent.")
+		time.sleep(15)
 	else:
 		b = b + 1
 		os.system('cls' if os.name == 'nt' else 'clear')
