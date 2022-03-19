@@ -6,18 +6,8 @@ import string
 import time
 import os
 import sys
-script_version = '4.0.0'
-window_title   = f"WARP-PLUS-CLOUDFLARE By Adarsh Goel(version {script_version})"
-os.system('title ' + window_title if os.name == 'nt' else 'PS1="\[\e]0;' + window_title + '\a\]"; echo $PS1')
+print("Warp Plus Adder By Adarsh Goel")
 os.system('cls' if os.name == 'nt' else 'clear')
-print ("[+] ABOUT SCRIPT:")
-print ("[-] With this script, you can getting unlimited GB on Warp+.")
-print (f"[-] Version: {script_version}")
-print ("-------------------------------------------")
-print ("[+] THIS SCRIPT CODDED BY Adarsh Goel") 
-print ("[-] SITE: https://itsadarsh.tech") 
-print ("[-] TELEGRAM: dc4noob")
-print ("------------------------------------------")
 print("""   
     _       _                _        ____            _ 
    / \   __| | __ _ _ __ ___| |__    / ___| ___   ___| |
@@ -25,24 +15,8 @@ print("""
  / ___ \ (_| | (_| | |  \__ \ | | | | |_| | (_) |  __/ |
 /_/   \_\__,_|\__,_|_|  |___/_| |_|  \____|\___/ \___|_|
                                                         """)
+print ("[-] With this script, you can getting unlimited GB on Warp+.")
 referrer = "fc3c3f51-9117-4127-820e-96304da18e9e"
-def progressBar():
-	animation     = ["[□□□□□□□□□□]","[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]"]
-	progress_anim = 0
-	save_anim     = animation[progress_anim % len(animation)]
-	percent       = 0
-	while True:
-		for i in range(10):
-			percent += 1
-			sys.stdout.write(f"\r[+] Waiting response...  " + save_anim + f" {percent}%")
-			sys.stdout.flush()
-			time.sleep(0.075)
-		progress_anim += 1
-		save_anim = animation[progress_anim % len(animation)]
-		if percent == 100:
-			sys.stdout.write("\r[+] Request completed... [■■■■■■■■■■] 100%")
-			break
-
 def genString(stringLength):
 	try:
 		letters = string.ascii_letters + string.digits
@@ -79,31 +53,29 @@ def run():
 		status_code = response.getcode()	
 		return status_code
 	except Exception as error:
-		print("")
 		print(error)	
 
 g = 0
 b = 0
 while True:
-	os.system('cls' if os.name == 'nt' else 'clear')
-	sys.stdout.write("\r[+] Sending request...   [□□□□□□□□□□] 0%")
-	sys.stdout.flush()
 	result = run()
 	if result == 200:
-		g += 1
-		progressBar()
+		g = g + 1
+		os.system('cls' if os.name == 'nt' else 'clear')
+		print("")
+		animation = ["[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
+		for i in range(len(animation)):
+			time.sleep(0.5)
+			sys.stdout.write("\r[+] Preparing... " + animation[i % len(animation)])
+			sys.stdout.flush()
 		print(f"\n[-] WORK ON ID: {referrer}")    
 		print(f"[:)] {g} GB has been successfully added to your account.")
 		print(f"[#] Total: {g} Good {b} Bad")
-		for i in range(18,0,-1):
-			sys.stdout.write(f"\r[*] After {i} seconds, a new request will be sent.")
-			sys.stdout.flush()
-			time.sleep(1)
+		print("[*] After 18 seconds, a new request will be sent.")
+		time.sleep(18)
 	else:
-		b += 1
+		b = b + 1
+		os.system('cls' if os.name == 'nt' else 'clear')
+		print("")
 		print("[:(] Error when connecting to server.")
-		print(f"[#] Total: {g} Good {b} Bad")
-		for i in range(10,0,-1):
-			sys.stdout.write(f"\r[*] Retrying in {i}s...")
-			sys.stdout.flush()
-			time.sleep(1)
+		print(f"[#] Total: {g} Good {b} Bad")	
