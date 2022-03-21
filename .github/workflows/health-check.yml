@@ -1,4 +1,4 @@
-name: Health Check
+name: Scheduled Health Check
 
 # Controls when the action will run.
 on:
