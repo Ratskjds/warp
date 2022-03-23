@@ -17,7 +17,6 @@ print("""
                                                         """)
 print ("[-] With this script, you can getting unlimited GB on Warp+.")
 referrer = "fc3c3f51-9117-4127-820e-96304da18e9e"
-#ref_errer = "f822219d-4e0c-44a6-8f3f-5ba11662a750"
 def genString(stringLength):
 	try:
 		letters = string.ascii_letters + string.digits
@@ -63,7 +62,9 @@ while True:
 	if result == 200:
 		g = g + 1
 		os.system('cls' if os.name == 'nt' else 'clear')
-		print("                       ")
+		print("")
+		print("                  WARP-PLUS-CLOUDFLARE (script)")
+		print("")
 		animation = ["[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
 		for i in range(len(animation)):
 			time.sleep(0.5)
@@ -72,12 +73,13 @@ while True:
 		print(f"\n[-] WORK ON ID: {referrer}")    
 		print(f"[:)] {g} GB has been successfully added to your account.")
 		print(f"[#] Total: {g} Good {b} Bad")
-		print("[*] After 15 seconds, a new request will be sent.")
-		print("                       ")
-		time.sleep(10)
+		print("[*] After 18 seconds, a new request will be sent.")
+		time.sleep(18)
 	else:
 		b = b + 1
 		os.system('cls' if os.name == 'nt' else 'clear')
+		print("")
+		print("                  WARP-PLUS-CLOUDFLARE (script)" )
 		print("")
 		print("[:(] Error when connecting to server.")
 		print(f"[#] Total: {g} Good {b} Bad")	
