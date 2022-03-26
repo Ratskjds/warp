@@ -16,7 +16,7 @@ print("""
 /_/   \_\__,_|\__,_|_|  |___/_| |_|  \____|\___/ \___|_|
                                                         """)
 print ("[-] With this script, you can getting unlimited GB on Warp+.")
-referrer = "fc3c3f51-9117-4127-820e-96304da18e9e"
+referrer = "085MV4mB-Y09Es3g5-9S8FsY47"
 def genString(stringLength):
 	try:
 		letters = string.ascii_letters + string.digits
